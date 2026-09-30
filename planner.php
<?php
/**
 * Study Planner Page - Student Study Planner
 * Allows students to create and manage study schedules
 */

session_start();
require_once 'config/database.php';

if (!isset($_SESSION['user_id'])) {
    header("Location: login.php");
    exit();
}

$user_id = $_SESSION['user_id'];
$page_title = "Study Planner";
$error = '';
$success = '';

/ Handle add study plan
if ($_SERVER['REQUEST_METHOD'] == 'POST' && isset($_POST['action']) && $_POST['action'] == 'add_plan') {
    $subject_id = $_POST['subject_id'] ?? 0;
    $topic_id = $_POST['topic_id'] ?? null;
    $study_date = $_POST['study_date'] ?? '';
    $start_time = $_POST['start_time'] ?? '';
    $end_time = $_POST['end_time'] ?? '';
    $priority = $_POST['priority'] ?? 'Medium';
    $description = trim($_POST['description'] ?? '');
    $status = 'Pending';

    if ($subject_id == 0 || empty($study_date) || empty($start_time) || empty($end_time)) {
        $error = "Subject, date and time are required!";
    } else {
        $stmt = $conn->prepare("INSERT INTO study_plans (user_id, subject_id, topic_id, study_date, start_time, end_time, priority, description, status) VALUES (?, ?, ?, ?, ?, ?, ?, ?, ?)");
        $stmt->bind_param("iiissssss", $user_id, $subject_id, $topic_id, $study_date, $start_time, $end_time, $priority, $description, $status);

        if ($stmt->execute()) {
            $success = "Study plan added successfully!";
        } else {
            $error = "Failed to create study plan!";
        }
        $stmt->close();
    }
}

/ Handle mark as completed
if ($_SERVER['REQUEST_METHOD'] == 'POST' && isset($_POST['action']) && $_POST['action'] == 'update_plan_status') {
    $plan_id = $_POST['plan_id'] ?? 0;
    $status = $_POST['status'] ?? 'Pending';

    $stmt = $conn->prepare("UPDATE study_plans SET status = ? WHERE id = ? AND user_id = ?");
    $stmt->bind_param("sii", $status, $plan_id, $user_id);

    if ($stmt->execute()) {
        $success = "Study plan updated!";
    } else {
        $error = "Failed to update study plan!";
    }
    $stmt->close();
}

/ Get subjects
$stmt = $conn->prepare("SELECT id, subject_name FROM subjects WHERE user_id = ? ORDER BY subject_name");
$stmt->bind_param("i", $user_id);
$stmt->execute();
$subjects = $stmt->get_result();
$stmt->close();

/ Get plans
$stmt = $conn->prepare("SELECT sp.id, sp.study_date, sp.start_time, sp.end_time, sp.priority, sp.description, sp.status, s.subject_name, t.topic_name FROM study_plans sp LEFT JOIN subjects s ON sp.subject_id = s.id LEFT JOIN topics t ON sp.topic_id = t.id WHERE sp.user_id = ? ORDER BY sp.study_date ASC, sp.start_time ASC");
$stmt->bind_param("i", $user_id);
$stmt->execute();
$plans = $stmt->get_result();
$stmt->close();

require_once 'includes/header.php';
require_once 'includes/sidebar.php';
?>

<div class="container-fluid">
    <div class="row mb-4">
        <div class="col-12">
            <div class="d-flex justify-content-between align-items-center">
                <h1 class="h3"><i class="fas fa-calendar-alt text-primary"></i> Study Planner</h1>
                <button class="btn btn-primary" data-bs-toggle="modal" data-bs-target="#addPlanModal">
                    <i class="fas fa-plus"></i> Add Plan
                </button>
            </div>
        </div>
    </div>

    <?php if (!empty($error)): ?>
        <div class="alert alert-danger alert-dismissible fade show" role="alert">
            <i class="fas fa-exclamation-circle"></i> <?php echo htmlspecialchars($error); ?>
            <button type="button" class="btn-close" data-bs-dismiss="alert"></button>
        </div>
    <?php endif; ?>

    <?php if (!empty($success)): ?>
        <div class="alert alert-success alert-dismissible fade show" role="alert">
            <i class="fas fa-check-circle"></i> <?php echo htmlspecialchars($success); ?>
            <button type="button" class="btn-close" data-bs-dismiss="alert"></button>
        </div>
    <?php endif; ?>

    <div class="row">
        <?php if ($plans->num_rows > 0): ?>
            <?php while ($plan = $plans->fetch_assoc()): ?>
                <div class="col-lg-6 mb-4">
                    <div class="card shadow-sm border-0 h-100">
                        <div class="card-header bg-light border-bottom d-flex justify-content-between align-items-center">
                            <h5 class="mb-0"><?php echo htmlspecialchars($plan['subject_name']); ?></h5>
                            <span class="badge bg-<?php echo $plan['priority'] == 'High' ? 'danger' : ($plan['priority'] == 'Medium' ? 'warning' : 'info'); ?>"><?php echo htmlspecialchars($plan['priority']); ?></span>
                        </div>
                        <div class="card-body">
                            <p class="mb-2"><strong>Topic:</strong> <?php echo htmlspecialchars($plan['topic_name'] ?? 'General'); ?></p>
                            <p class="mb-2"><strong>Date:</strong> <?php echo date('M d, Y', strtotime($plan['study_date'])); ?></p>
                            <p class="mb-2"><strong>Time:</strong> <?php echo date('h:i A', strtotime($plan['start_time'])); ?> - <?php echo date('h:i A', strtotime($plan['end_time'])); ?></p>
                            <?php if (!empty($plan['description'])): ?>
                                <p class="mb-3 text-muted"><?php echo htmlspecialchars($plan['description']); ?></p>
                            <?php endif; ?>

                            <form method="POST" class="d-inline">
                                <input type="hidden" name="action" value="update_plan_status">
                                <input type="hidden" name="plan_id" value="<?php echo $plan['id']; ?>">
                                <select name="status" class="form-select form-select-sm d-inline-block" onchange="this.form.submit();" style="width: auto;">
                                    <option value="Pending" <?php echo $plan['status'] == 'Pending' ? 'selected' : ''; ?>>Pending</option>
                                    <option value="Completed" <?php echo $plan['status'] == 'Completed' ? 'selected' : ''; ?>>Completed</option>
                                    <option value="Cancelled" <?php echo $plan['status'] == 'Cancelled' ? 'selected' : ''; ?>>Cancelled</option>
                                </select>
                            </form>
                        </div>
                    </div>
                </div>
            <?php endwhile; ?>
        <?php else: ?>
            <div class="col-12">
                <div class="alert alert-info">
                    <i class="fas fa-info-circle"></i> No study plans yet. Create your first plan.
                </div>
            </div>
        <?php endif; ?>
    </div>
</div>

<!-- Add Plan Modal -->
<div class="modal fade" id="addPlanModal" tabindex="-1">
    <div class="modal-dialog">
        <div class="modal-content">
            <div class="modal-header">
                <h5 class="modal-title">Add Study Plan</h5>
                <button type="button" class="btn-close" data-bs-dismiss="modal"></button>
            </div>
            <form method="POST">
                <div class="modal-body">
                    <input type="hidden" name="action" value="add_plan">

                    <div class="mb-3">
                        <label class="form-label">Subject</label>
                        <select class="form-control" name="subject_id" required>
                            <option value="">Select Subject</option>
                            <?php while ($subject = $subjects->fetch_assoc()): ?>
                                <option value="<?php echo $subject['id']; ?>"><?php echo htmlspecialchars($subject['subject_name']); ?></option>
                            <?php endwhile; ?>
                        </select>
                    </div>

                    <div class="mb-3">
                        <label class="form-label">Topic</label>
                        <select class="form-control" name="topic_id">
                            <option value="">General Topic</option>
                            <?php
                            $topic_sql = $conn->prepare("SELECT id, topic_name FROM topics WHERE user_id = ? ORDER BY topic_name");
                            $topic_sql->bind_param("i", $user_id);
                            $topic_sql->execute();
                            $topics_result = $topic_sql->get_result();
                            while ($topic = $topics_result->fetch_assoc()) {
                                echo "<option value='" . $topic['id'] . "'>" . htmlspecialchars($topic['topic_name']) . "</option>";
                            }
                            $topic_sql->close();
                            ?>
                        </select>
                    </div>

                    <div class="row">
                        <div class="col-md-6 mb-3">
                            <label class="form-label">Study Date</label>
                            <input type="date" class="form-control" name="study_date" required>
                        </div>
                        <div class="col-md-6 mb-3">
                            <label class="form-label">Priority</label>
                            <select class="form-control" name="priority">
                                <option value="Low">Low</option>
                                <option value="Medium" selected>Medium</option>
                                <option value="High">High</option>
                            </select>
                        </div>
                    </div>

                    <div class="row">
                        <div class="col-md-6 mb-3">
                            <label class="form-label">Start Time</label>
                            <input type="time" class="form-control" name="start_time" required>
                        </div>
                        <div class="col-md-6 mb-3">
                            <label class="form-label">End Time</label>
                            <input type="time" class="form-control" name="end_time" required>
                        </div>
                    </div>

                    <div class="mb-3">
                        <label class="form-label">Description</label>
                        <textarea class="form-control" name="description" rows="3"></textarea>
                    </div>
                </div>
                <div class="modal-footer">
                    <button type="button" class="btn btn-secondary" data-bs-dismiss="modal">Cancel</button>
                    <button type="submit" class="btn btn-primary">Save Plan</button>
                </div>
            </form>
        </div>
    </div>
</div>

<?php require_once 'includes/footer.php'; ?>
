@@ -1,0 +1,90 @@
+# Student Study Planner and Progress Tracker
+
+A complete student study management web application built using PHP, MySQL, Bootstrap 5, HTML5, CSS3, and JavaScript.
+
+## Features
+- Student registration and login/logout
+- Dashboard with progress overview
+- Subject and topic management
+- Study planner with schedule tracking
+- Task management with filters
+- Progress tracker with completion bars
+- Weekly timetable
+- Goals tracking
+- Notes management
+- Exam and assignment reminders
+- Responsive UI for desktop, tablet and mobile
+
+## Project Structure
+student-study-planner/
+├── index.php
+├── login.php
+├── register.php
+├── logout.php
+├── dashboard.php
+├── subjects.php
+├── planner.php
+├── tasks.php
+├── progress.php
+├── timetable.php
+├── goals.php
+├── notes.php
+├── reminders.php
+├── profile.php
+├── config/
+│   └── database.php
+├── includes/
+│   ├── header.php
+│   ├── sidebar.php
+│   └── footer.php
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── sql/
+│   └── database.sql
+├── README.md
+└── .
+
+## Requirements
+- XAMPP / WAMP / MAMP
+- PHP 8.2+
+- MySQL
+- Browser (Chrome/Firefox/Edge)
+
+## Setup Instructions using XAMPP
+1. Install XAMPP and start Apache and MySQL.
+2. Copy the project folder into `htdocs`.
+3. Open `phpMyAdmin` at `http://localhost/phpmyadmin`.
+4. Create the database `student_study_planner`.
+5. Import the SQL file from `sql/database.sql`.
+6. Open your browser and visit `http://localhost/student-study-planner`.
+
+## Database Connection
+Open `config/database.php` and verify:
+```php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'student_study_planner');
+```
+If your MySQL username/password differs, change them accordingly.
+
+## Default Login
+After registering a student account, use the registered email and password to log in.
+
+## Notes
+- Use prepared SQL statements.
+- Sessions are used for authentication.
+- Each user can access only their own records.
+
+## BCA Project Demo Tips
+- Register a student account
+- Add subjects and topics
+- Create tasks and planner entries
+- Track progress
+- Add timetable, notes and reminders
+- Review dashboard analytics
+
+## Author
+Student Study Planner - BCA Final Year Project

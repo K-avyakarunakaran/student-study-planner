@@ -1,0 +1,94 @@
+<?php
+/**
+ * CSS Styles for Student Study Planner
+ * Modern, clean, responsive student dashboard styling
+ */
+
+:root {
+    --primary: #667eea;
+    --primary-dark: #4f46e5;
+    --secondary: #764ba2;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --info: #06b6d4;
+    --dark: #111827;
+    --light: #f8fafc;
+    --gray: #6b7280;
+    --border: #e5e7eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
+    border-bottom: 1px solid var(--border);
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+}
+
+.nav-link.active {
+    color: #fff !important;
+}
+
+.progress {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #e9ecef;
+}
+
+.progress-bar {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: none;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.15);
+}
+
+.footer {
+    background: #111827;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px 15px !important;
+    }
+}
+
+.text-light {
+    color: rgba(255,255,255,0.7) !important;
+}
