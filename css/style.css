@@ -1,0 +1,70 @@
+:root {
+    --primary: #4f46e5;
+    --secondary: #7c3aed;
+    --dark: #111827;
+    --light: #f8fafc;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --muted: #6b7280;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.list-group-item.active {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-color: transparent;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.card-header {
+    border-radius: 16px 16px 0 0 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border: none;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.05);
+}
+
+.progress {
+    background: #e5e7eb;
+}
+
+.progress-bar {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.alert {
+    border: none;
+    border-radius: 12px;
+}
+
+@media (max-width: 991px) {
+    .d-flex {
+        display: block !important;
+    }
+    aside {
+        min-width: 100% !important;
+        min-height: auto !important;
+    }
+}
